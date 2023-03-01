@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="shadow sticky top-0 container">
+            <header className="shadow sticky top-0 container z-10 bg-white">
                 <div className="2xl:mx-14 h-20 py-3 flex items-center justify-between">
                     <Link className="h-full" to='/'>
                         <img className="block h-full w-auto overflow-hidden" src={LogoImage} alt='Logo' />

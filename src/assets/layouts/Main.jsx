@@ -1,6 +1,7 @@
-import ChatSupport from "@/components/ChatSupport/ChatSupport"
-import Footer from "@/components/Footer/Footer"
-import Header from "@/components/Header/Header"
+import Contact from "@components/Contact/Contact"
+import Footer from "@components/Footer/Footer"
+import Header from "@components/Header/Header"
+import ChatSupport from "@components/Home/Chat/Chat"
 import { Outlet } from "react-router-dom"
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
             <Header />
             <Outlet />
             <ChatSupport />
+            <Contact />
             <Footer />
         </>
     )

@@ -1,5 +1,5 @@
 
-const HomePartnerStudy = () => {
+const PartnerStudy = () => {
     const partners = [
         {
             name: "EHLE Institute Japanese Language School",
@@ -36,10 +36,10 @@ const HomePartnerStudy = () => {
     ]
     return (
         <div className="py-10 bg-dark-blue">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl px-5 mx-auto">
                 <h1 className="font-semibold text-white text-2xl">ĐỐI TÁC </h1>
                 <h1 className="font-semibold text-white text-xl">CỦA HELLO JAPAN</h1>
-                <p className="mt-5 text-white">Yoko tự hào giới thiệu một số đối tác chiến lược của Trung tâm. Nhờ có các đối tác đầy uy tín, sứ mệnh kết nối văn hóa – giáo dục giữa Việt Nam và Nhật Bản của Trung tâm ngày càng được nâng lên một tầm cao mới.</p>
+                <p className="mt-5 text-white">Hello Japan tự hào giới thiệu một số đối tác chiến lược của Trung tâm. Nhờ có các đối tác đầy uy tín, sứ mệnh kết nối văn hóa – giáo dục giữa Việt Nam và Nhật Bản của Trung tâm ngày càng được nâng lên một tầm cao mới.</p>
 
                 <ul className="mt-10 grid grid-cols-4 gap-5">
                     {
@@ -61,4 +61,4 @@ const HomePartnerStudy = () => {
     )
 }
 
-export default HomePartnerStudy
+export default PartnerStudy

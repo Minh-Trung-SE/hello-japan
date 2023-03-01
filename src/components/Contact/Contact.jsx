@@ -1,8 +1,8 @@
 
-const HomeContact = () => {
+const Contact = () => {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto grid grid-cols-2 gap-5">
+            <div className="max-w-7xl px-5 mx-auto grid grid-cols-2 gap-5">
                 <img
                     className="select-none"
                     alt="contact"
@@ -48,4 +48,4 @@ const HomeContact = () => {
     )
 }
 
-export default HomeContact
+export default Contact

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 const IMAGES = [Banner1, Banner2, Banner3]
 
-const BannerHome = () => {
+const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
@@ -33,4 +33,4 @@ const BannerHome = () => {
     )
 }
 
-export default BannerHome
+export default Banner

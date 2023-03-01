@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer className="w-full space-y-5 bg-dark-blue">
-            <div className="max-w-7xl mx-auto text-white grid grid-cols-3 gap-5 py-5">
+            <div className="max-w-7xl px-5 mx-auto text-white grid grid-cols-3 gap-5 py-5">
                 <div>
                     <p>Hotline: 0947 116 226</p>
                     <p>Email: Info@Hello Japan.edu.vn</p>

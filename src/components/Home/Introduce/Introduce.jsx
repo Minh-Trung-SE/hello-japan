@@ -1,8 +1,8 @@
 import introduceImage from '@assets/images/home/introduce_hello_japan.png'
-const HomeIntroduce = () => {
+const Introduce = () => {
     return (
         <div className="py-10">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl px-5 mx-auto">
                 <div className="grid grid-cols-12 gap-5">
 
                     <div className="col-span-8">
@@ -29,4 +29,4 @@ const HomeIntroduce = () => {
     )
 }
 
-export default HomeIntroduce
+export default Introduce

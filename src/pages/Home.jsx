@@ -1,15 +1,13 @@
-import BannerHome from "@/components/BannerHome/BannerHome"
-import HomeContact from "@/components/HomeContact/HomeContact"
-import HomeIntroduce from "@/components/HomeIntroduce/HomeIntroduce"
-import HomePartnerStudy from "@/components/HomePartnerStudy/HomePartnerStudy"
+import Banner from "@components/Home/Banner/Banner"
+import Introduce from "@components/Home/Introduce/Introduce"
+import PartnerStudy from "@components/Home/PartnerStudy/PartnerStudy"
 
 const Home = () => {
     return (
         <>
-            <BannerHome />
-            <HomeIntroduce />
-            <HomePartnerStudy />
-            <HomeContact />
+            <Banner />
+            <Introduce />
+            <PartnerStudy />
         </>
     )
 }

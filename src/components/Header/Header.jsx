@@ -1,12 +1,13 @@
 import LogoImage from "@assets/images/Logo.png"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const Header = () => {
 
 
     return (
         <>
-            <header className="shadow sticky top-0 container z-10 bg-white">
+            <header className="shadow sticky top-0 z-10 bg-white">
                 <div className="2xl:mx-14 h-20 py-3 flex items-center justify-between">
                     <Link className="h-full" to='/'>
                         <img className="block h-full w-auto overflow-hidden" src={LogoImage} alt='Logo' />
@@ -32,16 +33,16 @@ const Header = () => {
                                 <div className="hidden group-hover:block absolute right-0 top-full">
                                     <ul className="mt-3 space-y-0.5 bg-white shadow-lg border rounded w-72">
                                         <li className="list-none w-full text-sm px-5 py-2 text-dark-blue rounded hover:text-white hover:bg-red-600 transition-all duration-300">
-                                            <Link className="font-medium" to='/japanese-study-abroad'>Tổng Quan về Du Học Nhật Bản</Link>
+                                            <HashLink smooth={true} className="font-medium" to='/japanese-study-abroad/#overall'>Tổng Quan về Du Học Nhật Bản</HashLink>
                                         </li>
                                         <li className="list-none w-full text-sm px-5 py-2 text-dark-blue rounded hover:text-white hover:bg-red-600 transition-all duration-300">
-                                            <Link className="font-medium" to='/japanese-study-abroad'>Chi Phí Du Học Nhật Bản</Link>
+                                            <HashLink smooth={true} className="font-medium" to='/japanese-study-abroad/#price'>Chi Phí Du Học Nhật Bản</HashLink>
                                         </li>
                                         <li className="list-none w-full text-sm px-5 py-2 text-dark-blue rounded hover:text-white hover:bg-red-600 transition-all duration-300">
-                                            <Link className="font-medium" to='/japanese-study-abroad'>Thủ Tục và Hồ Sơ Du Học Nhật Bản</Link>
+                                            <HashLink smooth={true} className="font-medium" to='/japanese-study-abroad'>Thủ Tục và Hồ Sơ Du Học Nhật Bản</HashLink>
                                         </li>
                                         <li className="list-none w-full text-sm px-5 py-2 text-dark-blue rounded hover:text-white hover:bg-red-600 transition-all duration-300">
-                                            <Link className="font-medium" to='/japanese-study-abroad'>Câu Hỏi Thường Gặp</Link>
+                                            <HashLink smooth={true} className="font-medium" to='/japanese-study-abroad'>Câu Hỏi Thường Gặp</HashLink>
                                         </li>
                                     </ul>
                                 </div>

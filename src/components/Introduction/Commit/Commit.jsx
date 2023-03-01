@@ -3,7 +3,7 @@ const Commit = () => {
     return (
         <div className="py-10">
             <div className="max-w-7xl px-5 mx-auto space-y-10">
-                <h2 className="font-medium text-center text-2xl">NHỮNG GIÁ TRỊ VỀ CHẤT LƯỢNG YOKO CAM KẾT MANG TỚI CHO HỌC VIÊN</h2>
+                <h2 className="font-medium text-center text-2xl">NHỮNG GIÁ TRỊ VỀ CHẤT LƯỢNG HELLO JAPAN CAM KẾT MANG TỚI CHO HỌC VIÊN</h2>
                 <div className="grid grid-cols-2 gap-20">
                     <div className="space-y-5">
                         <h2 className="font-medium text-xl">CHẤT LƯỢNG HỖ TRỢ TƯ VẤN</h2>

@@ -7,12 +7,15 @@ export default defineConfig(
         plugins: [react()],
         resolve: {
             alias: {
-                '@': '/src',
                 '@assets': '/src/assets',
                 '@components': '/src/components',
                 '@middleware': '/src/middleware',
                 '@pages': '/src/pages',
-                '@layouts': '/src/layouts'
+                '@layouts': '/src/layouts',
+                '@helpers': '/src/helpers',
+                '@configs': '/src/configs',
+                '@utils': '/src/utils',
+                '@': '/src',
             },
         },
     }

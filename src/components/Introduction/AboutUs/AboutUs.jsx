@@ -21,7 +21,7 @@ const AboutUs = () => {
                 <div className="max-w-7xl px-5 mx-auto grid grid-cols-2 gap-5">
                     <div className="space-y-4 self-center">
                         <h2 className="font-medium text-xl text-red-600">Lời ngỏ</h2>
-                        <h2 className="font-medium text-2xl">TRUNG TÂM DU HỌC NHẬT BẢN YOKO</h2>
+                        <h2 className="font-medium text-2xl">TRUNG TÂM DU HỌC NHẬT BẢN HELLO JAPAN</h2>
                         <p>Được thành lập với sứ mệnh trở thành cầu nối văn hóa – giáo dục giữa Việt Nam và Nhật Bản. Trong suốt hơn 7 năm hoạt động. Đội ngũ Hello Japan đoàn kết và chung chí hướng, mang tới trải nghiệm và giá trị tốt nhất cho toàn bộ các học viên. </p>
                         <p>Với TẦM NHÌN được cụ thể hóa và SỨ MỆNH mang đầy cảm hứng. Hello Japan luôn cố gắng hoàn thiện từng ngày, đích đến cuối cùng là tạo ra các giải pháp đột phá về Du học Nhật Bản cho các học viên của trung tâm. Xa hơn nữa, Hello Japan mong muốn sẽ ghi tên mình vào tâm trí của khách hàng trên cả nước mỗi khi nhớ đến Du học Nhật Bản.</p>
                     </div>

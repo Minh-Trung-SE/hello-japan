@@ -2,21 +2,44 @@ import LaborExport from "@/pages/LaborExport"
 import Login from "@/pages/Login"
 import Register from "@/pages/Register"
 import StudyAboard from "@/pages/StudyAboard"
-import Main from "@assets/layouts/Main"
+
+import Consultancy from "@components/Admin/Consultancy/Consultancy"
+import { LaborExportProcedure } from "@components/Admin/LaborExport/LaborExport"
+import { StudyAboardProcedure } from "@components/Admin/StudyAbroad/StudyAbroad"
+import Procedure from "@components/Home/Procedure/Procedure"
+import Admin from "@layouts/Admin"
+import Main from "@layouts/Main"
 import Home from "@pages/Home"
 import Introduction from "@pages/Introduction"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { useSelector } from "react-redux"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 
 const AppRouter = () => {
+    const { role = '' } = useSelector(state => state.auth.account)
+
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="*" element={<Main />}>
-                    <Route index element={<Home />} />
-                    <Route path="introduction" element={<Introduction />} />
-                    <Route path="japanese-study-abroad" element={<StudyAboard />} />
-                    <Route path="japanese-labor-export" element={<LaborExport />} />
-                </Route>
+                {
+                    role === "ADMIN" ? (
+                        <>
+                            <Route path="admin" element={<Admin />} >
+                                <Route index element={<Consultancy />} />
+                                <Route path="study-abroad-procedure" element={<StudyAboardProcedure />} />
+                                <Route path="labor-export-procedure" element={<LaborExportProcedure />} />
+                            </Route>
+                            <Route path="*" element={<Navigate to='/admin' />} />
+                        </>
+                    ) : (
+                        <Route path="*" element={<Main />}>
+                            <Route index element={<Home />} />
+                            <Route path="introduction" element={<Introduction />} />
+                            <Route path="japanese-study-abroad" element={<StudyAboard />} />
+                            <Route path="japanese-labor-export" element={<LaborExport />} />
+                            <Route path="procedure" element={<Procedure />} />
+                        </Route>
+                    )
+                }
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />
             </Routes>

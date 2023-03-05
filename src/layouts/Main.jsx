@@ -1,4 +1,4 @@
-import Contact from "@components/Contact/Contact"
+import Consultancy from "@components/Consultancy/Consultancy"
 import Footer from "@components/Footer/Footer"
 import Header from "@components/Header/Header"
 import ChatSupport from "@components/Home/Chat/Chat"
@@ -10,7 +10,7 @@ const Main = () => {
             <Header />
             <Outlet />
             <ChatSupport />
-            <Contact />
+            <Consultancy />
             <Footer />
         </>
     )

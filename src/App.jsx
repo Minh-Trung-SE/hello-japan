@@ -1,9 +1,47 @@
+import { setAccount } from "@contexts/account"
+import { useEffect, useState } from "react"
+import { useDispatch } from "react-redux"
 import AppRouter from "./router/Router"
+import { getProfile } from "./services/authentication"
 
 const App = () => {
-    return (
+    const [loading, setLoading] = useState(true)
+    const dispatch = useDispatch()
 
-        <AppRouter />
+    useEffect(() => {
+        const fetchAccount = async () => {
+            const accessToken = localStorage.getItem('accessToken')
+            if (!accessToken) {
+                setLoading(false)
+                return
+            }
+
+            try {
+                const account = await getProfile()
+                dispatch(setAccount(account))
+
+            } finally {
+                setLoading(false)
+            }
+
+        }
+        fetchAccount()
+    }, [])
+
+
+    return (
+        <>
+            {
+                loading ? (
+                    <div className="h-screen w-screen">
+                        <div className="h-10 w-10 loading">
+
+                        </div>
+                    </div>
+
+                ) : <AppRouter />
+            }
+        </>
     )
 }
 

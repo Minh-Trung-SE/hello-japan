@@ -1,6 +1,6 @@
+import logoImage from "@assets/images/Logo.png";
 import GooglePopupSignIn from "@components/GoogleAuthProvider/GooglePopupSignIn";
 import { Link } from "react-router-dom";
-
 
 
 const Login = () => {
@@ -8,12 +8,20 @@ const Login = () => {
     return (
         <section className="bg-gray-50 min-h-screen flex items-center justify-center">
 
-            <div className="max-w-4xl">
+            <div className="max-w-4xl animate-fade-in">
 
                 <div className="m-5 bg-gray-100 grid grid-cols-1 sm:grid-cols-2 rounded-2xl shadow-lg">
                     <div className="space-y-5 p-8">
-                        <h2 className="font-bold text-2xl text-catalina-blue">Đăng Nhập</h2>
-                        <p className="text-xs text-catalina-blue">Nếu bạn đã có tài khoản, hãy đăng nhập</p>
+                        <div className="space-y-2">
+                            <Link to='/'>
+                                <img
+                                    className="w-20 h-20 mx-auto"
+                                    src={logoImage}
+                                />
+                            </Link>
+                            <h2 className="font-bold text-center text-2xl text-catalina-blue">Đăng Nhập</h2>
+                            <p className="text-xs text-center text-catalina-blue">Nếu bạn đã có tài khoản, hãy đăng nhập</p>
+                        </div>
 
                         <form
                             className="space-y-5 w-full"

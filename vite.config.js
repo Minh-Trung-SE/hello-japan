@@ -15,6 +15,7 @@ export default defineConfig(
                 '@helpers': '/src/helpers',
                 '@configs': '/src/configs',
                 '@utils': '/src/utils',
+                '@contexts': '/src/contexts',
                 '@': '/src',
             },
         },

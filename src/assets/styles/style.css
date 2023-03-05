@@ -28,22 +28,22 @@
     animation: loading 2s linear infinite;
 }
 
-.radio:hover .check {
+.circle-check:hover .check {
     stroke-dashoffset: 0;
 }
 
-.radio {
+.circle-check {
     position: relative;
     display: inline-block;
 }
 
-.radio .background {
+.circle-check .background {
     fill: #ccc;
     transition: ease all 0.6s;
     -webkit-transition: ease all 0.6s;
 }
 
-.radio .stroke {
+.circle-check .stroke {
     fill: none;
     stroke: #fff;
     stroke-miterlimit: 10;
@@ -54,7 +54,7 @@
     -webkit-transition: ease all 0.6s;
 }
 
-.radio .check {
+.circle-check .check {
     fill: none;
     stroke: #fff;
     stroke-linecap: round;
@@ -66,7 +66,7 @@
     -webkit-transition: ease all 0.6s;
 }
 
-.radio input[type=radio] {
+.circle-check input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -77,18 +77,18 @@
     appearance: none;
 }
 
-.radio input[type=radio]:hover {
+.circle-check input:hover {
     cursor: pointer;
 }
 
-.radio input[type=radio]:checked+svg .background {
-    fill: #283c5f;
+.circle-check input:checked+svg .background {
+    fill: inherit;
 }
 
-.radio input[type=radio]:checked+svg .stroke {
+.circle-check input:checked+svg .stroke {
     stroke-dashoffset: 0;
 }
 
-.radio input[type=radio]:checked+svg .check {
+.circle-check input:checked+svg .check {
     stroke-dashoffset: 0;
 }

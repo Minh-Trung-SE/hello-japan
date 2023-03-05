@@ -39,8 +39,14 @@ const Consultancy = () => {
         e.preventDefault()
         formik.setSubmitting(true)
         try {
+            const id = Date.now().toString()
+            const payload = {
+                ...formik.values,
+                id
 
-            await postRequestConsultancy(formik.values)
+            }
+
+            await postRequestConsultancy(payload)
             console.log("Submit form success!")
         } finally {
             formik.resetForm()
@@ -96,8 +102,8 @@ const Consultancy = () => {
 
                         <div className='w-8/12 mx-auto flex space-x-4'>
                             <span>Mong muốn tư vấn về: </span>
-                            <div className='flex space-x-2 items-center'>
-                                <div className="radio w-5 h-5">
+                            <label className='flex space-x-2 items-center cursor-pointer group'>
+                                <div className="circle-check w-5 h-5 fill-catalina-blue">
                                     <input
                                         name='type'
                                         type="radio"
@@ -111,10 +117,10 @@ const Consultancy = () => {
                                         <polyline className="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
                                     </svg>
                                 </div>
-                                <span>Du học</span>
-                            </div>
-                            <div className='flex space-x-2 items-center'>
-                                <div className="radio w-5 h-5">
+                                <span className={`group-hover:text-catalina-blue transition-all duration-300 group-hover:font-medium ${type === 'STUDY' ? 'text-catalina-blue font-medium' : 'font-normal'}`}>Du học</span>
+                            </label>
+                            <label className='flex space-x-2 items-center cursor-pointer group'>
+                                <div className="circle-check w-5 h-5 fill-red-600">
                                     <input
                                         name='type'
                                         type="radio"
@@ -128,8 +134,8 @@ const Consultancy = () => {
                                         <polyline className="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
                                     </svg>
                                 </div>
-                                <span>Lao động</span>
-                            </div>
+                                <span className={`group-hover:text-red-600 transition-all duration-300 group-hover:font-medium ${type === 'LABOR' ? 'text-red-600 font-medium' : 'font-normal'}`}>Lao động</span>
+                            </label>
                         </div>
 
                         <textarea

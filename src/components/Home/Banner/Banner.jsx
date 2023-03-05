@@ -1,6 +1,6 @@
-import Banner1 from '@assets/images/banner/banner_home_1.jpg'
-import Banner2 from '@assets/images/banner/banner_home_2.jpg'
-import Banner3 from '@assets/images/banner/banner_home_3.jpg'
+import Banner1 from '@assets/images/banner/banner_home_1.png'
+import Banner2 from '@assets/images/banner/banner_home_2.png'
+import Banner3 from '@assets/images/banner/banner_home_3.png'
 import { useEffect, useState } from 'react'
 
 const IMAGES = [Banner1, Banner2, Banner3]

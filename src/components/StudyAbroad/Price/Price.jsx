@@ -149,6 +149,9 @@ const Price = () => {
                         <div className="col-span-3 text-center py-1.5 font-medium border-r">0</div>
                     </li>
                 </ul>
+                <div className="text-white mt-5 bg-slate-700">
+                    <h3 className="col-span-3 text-center font-medium py-1.5">TỔNG CHI PHÍ: 143.680.000 - 183.680.000 VNĐ</h3>
+                </div>
             </div>
 
         </section>

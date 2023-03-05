@@ -33,7 +33,7 @@ const App = () => {
         <>
             {
                 loading ? (
-                    <div className="h-screen w-screen">
+                    <div className="h-screen w-screen flex justify-center items-center">
                         <div className="h-10 w-10 loading">
 
                         </div>

@@ -85,7 +85,7 @@ const Consultancy = () => {
                 <thead>
                     <tr className="text-sm font-medium text-gray-700 border-gray-200">
                         <th className="w-28 px-4 border text-left">Mã hồ sơ</th>
-                        <th className="w-28 px-4 border text-left">Họ tên</th>
+                        <th className="px-4 border text-left">Họ tên</th>
                         <th className="py-2 px-4 border text-left">Số điện thoại</th>
                         <th className="py-2 px-4 border text-left">Loại tư vấn</th>
                         <th className="py-2 px-4 border text-left">Yêu cầu tư vấn</th>

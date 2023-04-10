@@ -28,3 +28,8 @@
 *:hover::-webkit-scrollbar-thumb {
     background: #909090;
 }
+
+button,
+input {
+    outline: transparent;
+}

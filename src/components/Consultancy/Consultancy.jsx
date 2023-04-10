@@ -17,8 +17,6 @@ const contactSchema = Yup.object().shape(
 
 const Consultancy = () => {
 
-
-
     const formik = useFormik(
         {
             validateOnBlur: true,
@@ -59,7 +57,7 @@ const Consultancy = () => {
     const { name, email, type, phone, description } = formik.values
     const { name: nameError, email: emailError, phone: phoneError, description: descriptionError } = formik.errors
     const { name: nameTouched, email: emailTouched, phone: phoneTouched, description: descriptionTouched } = formik.touched
-    const { handleBlur, handleChange, handleSubmit } = formik
+    const { handleBlur, handleChange } = formik
 
     return (
         <div className="bg-white">
@@ -159,12 +157,7 @@ const Consultancy = () => {
                             </svg>
 
                         </button>
-
-
-
                     </form>
-
-
                 </div>
             </div>
         </div>

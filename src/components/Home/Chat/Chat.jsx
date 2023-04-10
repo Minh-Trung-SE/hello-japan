@@ -9,7 +9,7 @@ const ChatSupport = () => {
 
 
     return (
-        <div className="fixed bottom-5 right-10">
+        <div className="fixed z-40 bottom-5 right-10">
             {
                 displayChat ? (
                     <div

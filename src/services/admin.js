@@ -13,8 +13,27 @@ const updateConsultancy = async (payload) => {
     return data
 }
 
+const addPartnerStudy = async (payload) => {
+    const { data } = await instance.post(
+        '/partner-study',
+        payload
+    )
+    return data
+}
+
+
+const deletePartnerStudy = async (payload) => {
+    const { data } = await instance.delete(
+        '/partner-study',
+        { data: payload }
+    )
+    return data
+}
+
 export {
     getAllConsultancy,
-    updateConsultancy
+    deletePartnerStudy,
+    updateConsultancy,
+    addPartnerStudy,
 }
 

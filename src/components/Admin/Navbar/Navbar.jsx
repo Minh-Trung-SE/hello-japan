@@ -46,8 +46,18 @@ const Navbar = () => {
                     >
                         Hồ Sơ XKLĐ
                     </Link>
-
-
+                    <Link
+                        className={`font-medium hover:text-red-600 transition-all duration-300 ${pathname === '//admin/partner-study' ? 'text-red-600' : 'text-dark-blue'}`}
+                        to='/admin/partner-study'
+                    >
+                        Liên Kết Du Học
+                    </Link>
+                    <Link
+                        className={`font-medium hover:text-red-600 transition-all duration-300 ${pathname === '//admin/partner-study' ? 'text-red-600' : 'text-dark-blue'}`}
+                        to='/admin/partner-labor'
+                    >
+                        Liên Kết XKLĐ
+                    </Link>
                 </ul>
 
                 <div className="relative ml-3">

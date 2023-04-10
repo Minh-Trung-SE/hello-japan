@@ -19,7 +19,7 @@ const Header = () => {
     }, [])
 
     return (
-        <header className="shadow sticky top-0 z-40 bg-white">
+        <header className="shadow sticky top-0 z-20 bg-white">
             <div className="2xl:mx-14 h-20 py-3 flex items-center justify-between">
                 <Link className="h-full" to='/'>
                     <img
